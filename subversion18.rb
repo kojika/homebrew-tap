@@ -71,7 +71,7 @@ class Subversion18 < Formula
   # Patch for Subversion handling of OS X UTF-8-MAC filename.
   if build.with? "unicode-path"
     patch :p0 do
-      url "https://gist.githubusercontent.com/tholu/fb5d30c586e33b53ecba/raw/a266b1aa01f95cdc38fcedda4c6bce253dfb58c2/svn_1.8.x_darwin_unicode_precomp.patch"
+      url "https://gist.githubusercontent.com/kojika/33621491a4e91689d0b2997713b3eb03/raw/a266b1aa01f95cdc38fcedda4c6bce253dfb58c2/svn_1.8.x_darwin_unicode_precomp.patch"
       sha256 "2eaee628e3161bce4b1697660281cab30f42265369bfa7074ea435e441d543e7"
     end
   end
