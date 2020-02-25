@@ -43,9 +43,9 @@ class Subversion18 < Formula
   depends_on "swig" if build.with?("perl") || build.with?("python") || build.with?("ruby")
 
   resource "serf" do
-    url "https://necomesi.jp/staff/kojika/homebrew-tap/serf-1.3.9.tar.bz2"
-    mirror "https://necomesi.jp/staff/kojika/homebrew-tap/serf-1.3.9.tar.bz2"
-    sha256 "a5237b58aedfbe3b9ac99623e718b518b2ad41812df4c21674218fc71169d0ae"
+    url "https://necomesi.jp/staff/kojika/homebrew-tap/serf-trunk@1866477.zip"
+    mirror "https://necomesi.jp/staff/kojika/homebrew-tap/serf-trunk@1866477.zip"
+    sha256 "e8340889020d42b0b574ff20537202223ae724f1eafff3352b76f11222b42a83"
   end
 
   # Fix #23993 by stripping flags swig can't handle from SWIG_CPPFLAGS
