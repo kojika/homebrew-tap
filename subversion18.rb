@@ -30,7 +30,7 @@ class Subversion18 < Formula
   depends_on "apr"
   depends_on "apr-util"
   depends_on "openssl@1.1"
-  
+
   # Always build against Homebrew versions instead of system versions for consistency.
   depends_on "sqlite"
 
@@ -43,9 +43,9 @@ class Subversion18 < Formula
   depends_on "swig" if build.with?("perl") || build.with?("python") || build.with?("ruby")
 
   resource "serf" do
-    url "https://www.apache.org/dyn/closer.cgi?path=serf/serf-1.3.9.tar.bz2"
-    mirror "https://archive.apache.org/dist/serf/serf-1.3.9.tar.bz2"
-    sha256 "549c2d21c577a8a9c0450facb5cca809f26591f048e466552240947bdf7a87cc"
+    url "https://necomesi.jp/staff/kojika/homebrew-tap/serf-1.3.9.tar.bz2"
+    mirror "https://necomesi.jp/staff/kojika/homebrew-tap/serf-1.3.9.tar.bz2"
+    sha256 "a5237b58aedfbe3b9ac99623e718b518b2ad41812df4c21674218fc71169d0ae"
   end
 
   # Fix #23993 by stripping flags swig can't handle from SWIG_CPPFLAGS
